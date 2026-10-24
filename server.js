@@ -17,5 +17,9 @@ function ensureStaffAccount() {
   console.log(`Created the staff account ${email}. Change the password with STAFF_PASSWORD before sharing this site.`);
 }
 
-ensureStaffAccount();
-app.listen(port, () => console.log(`Hugpong Kape is running at http://localhost:${port}`));
+module.exports = { ensureStaffAccount };
+
+if (require.main === module) {
+  ensureStaffAccount();
+  app.listen(port, () => console.log(`Hugpong Kape is running at http://localhost:${port}`));
+}

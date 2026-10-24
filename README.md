@@ -17,6 +17,22 @@ A student concept coffee shop that buys beans from highland farmers and shares p
 
 `npm run dev` restarts the server every time you save a server file.
 
+## Deploy on Vercel
+
+Import this repository in Vercel and set these environment variables for the
+Production environment:
+
+- `NODE_ENV=production`
+- `SESSION_SECRET` to a long random value
+- `STAFF_EMAIL` to the staff login email
+- `STAFF_PASSWORD` to the staff login password
+
+This project includes a Vercel serverless entry point. Vercel's filesystem is
+ephemeral, so the demo database is stored in `/tmp` and can be reset when a new
+deployment or serverless instance starts. Sessions are also kept in memory.
+Use a hosted database and persistent session store before using the site for
+real customers.
+
 ## Accounts
 
 - **Customers** register on the site. They get a stamp card and a running total of what they have sent to the farmers.

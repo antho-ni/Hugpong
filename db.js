@@ -3,7 +3,8 @@ const path = require("path");
 // node:sqlite ships inside Node 22, so nothing needs to be compiled on Windows.
 const { DatabaseSync } = require("node:sqlite");
 
-const db = new DatabaseSync(path.join(__dirname, "hugpong.db"));
+const databasePath = process.env.VERCEL ? "/tmp/hugpong.db" : path.join(__dirname, "hugpong.db");
+const db = new DatabaseSync(databasePath);
 db.exec("PRAGMA journal_mode = WAL");
 db.exec("PRAGMA foreign_keys = ON");
 
