@@ -1,0 +1,5 @@
+node_modules/
+hugpong.db
+hugpong.db-shm
+hugpong.db-wal
+.env

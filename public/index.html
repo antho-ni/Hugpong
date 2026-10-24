@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hugpong Kape</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="in">
+    <div class="bar">
+      <a class="brand" href="#top">Hugpong <span>Kape</span></a>
+      <nav aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#menu">Menu</a>
+        <a href="#farmers">Farmers</a>
+        <a href="#faq">FAQ</a>
+        <span class="auth" id="authlinks"></span>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div id="view-home">
+<header class="hero" id="top">
+  <div class="in">
+    <div class="hero-grid">
+      <div>
+        <h1>Coffee that pays the <em>people who grow it.</em></h1>
+        <p class="sub">Hugpong Kape buys beans straight from highland farmers in Negros and sends 30 centavos of every peso back to their farming group.</p>
+        <div class="cta">
+          <a class="btn primary" href="#menu">See where your money goes</a>
+          <a class="btn ghost" href="#how">How it works</a>
+        </div>
+      </div>
+      <aside class="receipt" aria-label="Sample receipt showing how one drink is split">
+        <h3>Hugpong Kape</h3>
+        <div class="row"><span>1 Muscovado Latte</span><b>&#8369;140</b></div>
+        <hr>
+        <div class="row gives"><span>Farming group</span><b>&#8369;42</b></div>
+        <div class="row"><span>Beans and supplies</span><b>&#8369;56</b></div>
+        <div class="row"><span>Shop and students</span><b>&#8369;42</b></div>
+        <hr>
+        <div class="row"><span>Total</span><b>&#8369;140</b></div>
+        <p class="fine">Sample figures for a concept shop</p>
+        <div class="zig" aria-hidden="true"></div>
+      </aside>
+    </div>
+  </div>
+  <svg class="bean-route" viewBox="0 0 1280 190" preserveAspectRatio="none" aria-hidden="true">
+    <path id="bean-trail" class="bean-trail" pathLength="1" d="M30 125 C90 20 150 20 210 125 S330 230 390 125 S510 20 570 125 S690 230 750 125 S870 20 930 125 S1050 230 1250 55"></path>
+    <g class="bean-group bean-group-one">
+      <g class="moving-bean bean-one">
+        <path d="M-18 -7 C-15 -20 7 -23 17 -12 C26 -2 18 18 4 22 C-10 25 -22 10 -18 -7 Z"></path>
+        <path class="bean-seam" d="M-9 -15 C1 -5 -2 8 10 17"></path>
+      </g>
+      <g class="moving-bean bean-one bean-cluster-a">
+        <path d="M-11 -5 C-9 -15 5 -17 12 -9 C18 -1 12 12 3 15 C-7 17 -14 7 -11 -5 Z"></path>
+        <path class="bean-seam" d="M-6 -10 C1 -4 -1 5 6 10"></path>
+      </g>
+      <animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#bean-route-motion"></mpath>
+      </animateMotion>
+    </g>
+    <g class="bean-group bean-group-two">
+      <g class="moving-bean bean-two">
+        <path d="M-13 -9 C-7 -20 10 -18 16 -7 C22 5 12 18 0 19 C-13 20 -20 4 -13 -9 Z"></path>
+        <path class="bean-seam" d="M-6 -13 C3 -5 -4 7 7 14"></path>
+      </g>
+      <g class="moving-bean bean-two bean-cluster-b">
+        <path d="M-10 -6 C-7 -15 6 -16 12 -7 C17 2 10 12 1 14 C-8 14 -13 4 -10 -6 Z"></path>
+        <path class="bean-seam" d="M-5 -10 C2 -4 -1 5 6 10"></path>
+      </g>
+      <g class="moving-bean bean-three bean-cluster-c">
+        <path d="M-8 -5 C-5 -13 6 -14 11 -6 C15 3 9 11 1 12 C-7 12 -11 3 -8 -5 Z"></path>
+        <path class="bean-seam" d="M-4 -9 C2 -3 -1 4 5 8"></path>
+      </g>
+      <animateMotion dur="12s" begin="-4s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#bean-route-motion"></mpath>
+      </animateMotion>
+    </g>
+    <g class="bean-group bean-group-three">
+      <g class="moving-bean bean-three">
+        <path d="M-21 -5 C-17 -15 -1 -20 12 -11 C24 -3 17 14 5 19 C-9 25 -25 11 -21 -5 Z"></path>
+        <path class="bean-seam" d="M-12 -11 C-2 -3 -5 9 9 15"></path>
+      </g>
+      <g class="moving-bean bean-three bean-cluster-d">
+        <path d="M-13 -6 C-10 -16 3 -18 12 -10 C20 -2 14 12 4 16 C-7 20 -17 7 -13 -6 Z"></path>
+        <path class="bean-seam" d="M-8 -11 C1 -4 -2 7 8 12"></path>
+      </g>
+      <g class="moving-bean bean-one bean-cluster-e">
+        <path d="M-10 -5 C-8 -14 5 -15 11 -7 C16 2 10 12 1 14 C-8 15 -13 4 -10 -5 Z"></path>
+        <path class="bean-seam" d="M-5 -10 C2 -4 -1 5 6 10"></path>
+      </g>
+      <g class="moving-bean bean-two bean-cluster-f">
+        <path d="M-8 -4 C-5 -12 5 -13 10 -6 C14 2 8 10 1 11 C-6 12 -11 3 -8 -4 Z"></path>
+        <path class="bean-seam" d="M-4 -8 C2 -3 -1 4 5 8"></path>
+      </g>
+      <animateMotion dur="12s" begin="-8s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#bean-route-motion"></mpath>
+      </animateMotion>
+    </g>
+    <path id="bean-route-motion" class="bean-route-motion" d="M30 125 C90 20 150 20 210 125 S330 230 390 125 S510 20 570 125 S690 230 750 125 S870 20 930 125 S1050 230 1250 55" fill="none"></path>
+  </svg>
+  <svg class="hills" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 110 L0 62 C120 20 220 20 340 56 C460 92 560 30 700 28 C840 26 940 78 1060 50 C1130 34 1170 40 1200 48 L1200 110 Z" fill="var(--hill-a)"></path>
+    <path d="M0 110 L0 86 C140 58 260 60 400 84 C540 108 640 62 780 66 C920 70 1020 104 1200 74 L1200 110 Z" fill="var(--hill-b)"></path>
+    <path d="M0 110 L0 100 C200 88 420 104 640 98 C860 92 1020 102 1200 94 L1200 110 Z" fill="var(--bg)"></path>
+  </svg>
+</header>
+
+<section class="band light" id="problem">
+  <div class="in two">
+    <div>
+      <p class="eyebrow">The problem</p>
+      <h2 class="h2">Farmers grow the coffee. Middlemen set the price.</h2>
+      <p class="lead">Small coffee farmers in the uplands often sell through traders. They take the price they are offered, and the cup you buy in the city costs many times what the farmer was paid for the beans.</p>
+    </div>
+    <ul class="facts">
+      <li><b>Few buyers</b><span>Farms are far from town, so one trader can end up as the only option.</span></li>
+      <li><b>Shifting prices</b><span>The price paid per kilo can change from one season to the next, which makes planning hard.</span></li>
+      <li><b>No say</b><span>Farmers rarely see where their coffee ends up or what it sells for.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band light" id="how" style="padding-top:0">
+  <div class="in">
+    <p class="eyebrow">The idea</p>
+    <h2 class="h2">Hugpong means joining together. So we cut out the middle.</h2>
+    <p class="lead">Hugpong Kape is a student-run coffee shop built around one partnership between university students and highland coffee growers.</p>
+    <ol class="steps">
+      <li>
+        <h3>Farmers harvest and dry</h3>
+        <p>Partner farming groups pick, process and dry their beans on their own land.</p>
+      </li>
+      <li>
+        <h3>We buy direct, at a posted price</h3>
+        <p>The shop pays the farming group directly. The price per kilo is written down and shared with you.</p>
+      </li>
+      <li>
+        <h3>You drink, they get their share</h3>
+        <p>Every cup carries a fixed share back to the farmers, printed on your receipt.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band light" style="padding-top:0">
+  <div class="in">
+    <p class="eyebrow">Why it is worth your cup</p>
+    <h2 class="h2">Good coffee with a clear conscience.</h2>
+    <div class="benefits">
+      <div><h3>Fair-price buying</h3><p>Beans are bought above the usual trader price, and the price is public.</p></div>
+      <div><h3>Run by students</h3><p>University students staff the counter, handle marketing and learn how a small business works.</p></div>
+      <div><h3>Local flavors</h3><p>Muscovado, calamansi and ube sit next to classic espresso drinks.</p></div>
+      <div><h3>Open books</h3><p>Each receipt shows how your peso is split, so nothing is hidden.</p></div>
+      <div><h3>Sponsor a farmer</h3><p>Add &#8369;10 to any order and it goes straight to the farming group.</p></div>
+      <div><h3>Made for studying</h3><p>Free Wi-Fi, outlets at every seat and quiet hours in the afternoon.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band light" id="menu" style="background:var(--surface)">
+  <div class="in">
+    <p class="eyebrow">Menu and where your money goes</p>
+    <h2 class="h2">Pick a drink and see who gets what.</h2>
+    <div class="menuwrap">
+      <ul class="drinks" id="drinks"></ul>
+      <div class="split" aria-live="polite">
+        <h3 id="sp-name">Muscovado Latte</h3>
+        <p class="sel" id="sp-price">&#8369;140 per cup</p>
+        <div class="stack" aria-hidden="true"><i class="f" id="bar-f"></i><i class="b" id="bar-b"></i><i class="s" id="bar-s"></i></div>
+        <div class="legend">
+          <div><span class="sw" style="background:var(--farmer)"></span><span>Farming group (30%)</span><span class="v" id="v-f">&#8369;42</span></div>
+          <div><span class="sw" style="background:var(--beans)"></span><span>Beans and supplies (40%)</span><span class="v" id="v-b">&#8369;56</span></div>
+          <div><span class="sw" style="background:var(--shop)"></span><span>Shop and students (30%)</span><span class="v" id="v-s">&#8369;42</span></div>
+        </div>
+        <label class="sponsor" for="sponsor">
+          <input type="checkbox" id="sponsor">
+          <span>Add &#8369;10 to sponsor a farmer. Your cup would send <b id="v-total">&#8369;42</b> to the farming group.</span>
+        </label>
+        <p class="fine">Sample prices and percentages for a concept shop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band light" id="farmers">
+  <div class="in">
+    <p class="eyebrow">Our growers</p>
+    <h2 class="h2">The farming groups behind the beans.</h2>
+    <p class="lead">These profiles are based on publicly documented coffee-growing communities in Negros Occidental. They are not current partners of Hugpong Kape, and any partnership would require permission and direct confirmation.</p>
+    <div class="ledger">
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Farming group</th><th>Area</th><th>Beans</th><th>Altitude</th><th>Publicly documented information</th></tr></thead>
+          <tbody>
+            <tr><td>Minoyan Murcia Marginal Coffee Growers Agri-Cooperative</td><td>Minoyan, Murcia, Negros Occidental</td><td>Coffee; variety not specified in source</td><td>Not specified</td><td>Cooperative president Teddy Cañete described local coffee processing and post-typhoon production challenges.</td></tr>
+            <tr><td>Don Salvador Benedicto Integrated Social Forestry Federation</td><td>Don Salvador Benedicto, Negros Occidental</td><td>Coffee; variety not specified in source</td><td>869 m at the documented site</td><td>Members participated in farmer mentoring; a demo farm in Barangay Bunga has 1,200 coffee trees.</td></tr>
+            <tr><td>Bagong Silang coffee growers</td><td>Bagong Silang, Don Salvador Benedicto, Negros Occidental</td><td>Robusta</td><td>Documented site at 869 m</td><td>Growers were documented learning farm planning and mapping through a mentoring program.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p class="fine source-note">Public source: <a href="https://www.arcores.org/en/coffee-negros-philippines/" target="_blank" rel="noopener noreferrer">ARCORES, “Raise the Coffee Cup in Negros Island”</a>. Details were accessed for project reference and should be re-confirmed before commercial use.</p>
+  </div>
+</section>
+
+<section class="band light" id="offers" style="background:var(--surface)">
+  <div class="in">
+    <p class="eyebrow">Offers</p>
+    <h2 class="h2">Come back often. Give a little more.</h2>
+    <div class="offers">
+      <div class="stamp">
+        <h3>The stamp card</h3>
+        <p class="s">Buy nine cups and the tenth is free. Tap a circle to try it.</p>
+        <div class="stamps" id="stamps"></div>
+        <p class="count" id="stamp-count">0 of 9 cups stamped</p>
+        <p class="fine">Want to keep your real stamps? <a href="#register">Create a free account</a>.</p>
+      </div>
+      <ul class="perks">
+        <li><b>Student price</b><span>Show a school ID and take &#8369;10 off any drink.</span></li>
+        <li><b>Bring your own cup</b><span>Use your own tumbler and save &#8369;5. It also means less waste.</span></li>
+        <li><b>Sponsor a farmer</b><span>Add &#8369;10 at the counter. All of it goes to the farming group.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band light" id="faq">
+  <div class="in">
+    <p class="eyebrow">Questions</p>
+    <h2 class="h2">Things you might ask.</h2>
+    <div class="faq">
+      <details>
+        <summary>Is Hugpong Kape a real shop?</summary>
+        <p>No. It is a concept created for a class project, so the prices, percentages and farmer profiles are examples.</p>
+      </details>
+      <details>
+        <summary>Is the University of St. La Salle part of this?</summary>
+        <p>The idea is inspired by a university and farmer partnership, but this page is a student concept. It is not an official project of the university and does not use its name or logo as a partner.</p>
+      </details>
+      <details>
+        <summary>Where would the beans come from?</summary>
+        <p>From partner farming groups in the Negros Occidental uplands, bought directly and delivered as dried beans.</p>
+      </details>
+      <details>
+        <summary>How is the 30% share decided?</summary>
+        <p>In this concept it is a fixed share written into the agreement with each farming group. A real shop would set the number together with the farmers.</p>
+      </details>
+      <details>
+        <summary>Can I order now?</summary>
+        <p>Not yet. You can leave your email below to hear about an opening.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="band final" id="join">
+  <div class="in">
+    <h2 class="h2">Buy a cup. Support a farmer.</h2>
+    <p class="lead">Leave your email and we would let you know when the doors open.</p>
+    <form class="join" id="join-form" novalidate>
+      <label for="email">Email for the opening list</label>
+      <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+      <button class="btn primary" type="submit">Join the list</button>
+      <p class="msg" id="join-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</div>
+
+<section class="band light view" id="view-login" hidden>
+  <div class="in">
+    <div class="authcard">
+      <p class="eyebrow">Welcome back</p>
+      <h1 class="h2" id="h-login" tabindex="-1">Log in to Hugpong Kape</h1>
+      <form id="login-form" novalidate>
+        <div class="field"><label for="li-email">Email</label><input id="li-email" type="email" autocomplete="username" required aria-describedby="li-msg"></div>
+        <div class="field"><label for="li-pw">Password</label><div class="password-wrap"><input id="li-pw" type="password" autocomplete="current-password" required aria-describedby="li-msg"><button class="password-toggle" type="button" data-password-target="li-pw" aria-label="Show password">Show</button></div></div>
+        <button class="btn primary" type="submit">Log in</button>
+        <p class="formmsg" id="li-msg" role="alert"></p>
+      </form>
+      <p class="alt">New here? <a href="#register">Create an account</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band light view" id="view-register" hidden>
+  <div class="in">
+    <div class="authcard">
+      <p class="eyebrow">Join the farmers' table</p>
+      <h1 class="h2" id="h-register" tabindex="-1">Create your account</h1>
+      <form id="reg-form" novalidate>
+        <div class="field"><label for="rg-name">Name</label><input id="rg-name" type="text" maxlength="60" autocomplete="name" required aria-describedby="rg-msg"></div>
+        <div class="field"><label for="rg-email">Email</label><input id="rg-email" type="email" autocomplete="username" required aria-describedby="rg-msg"></div>
+        <div class="field"><label for="rg-pw">Password (8 to 72 characters)</label><div class="password-wrap"><input id="rg-pw" type="password" minlength="8" maxlength="72" autocomplete="new-password" required aria-describedby="rg-msg"><button class="password-toggle" type="button" data-password-target="rg-pw" aria-label="Show password">Show</button></div></div>
+        <div class="field"><label for="rg-pw2">Confirm password</label><div class="password-wrap"><input id="rg-pw2" type="password" minlength="8" maxlength="72" autocomplete="new-password" required aria-describedby="rg-msg"><button class="password-toggle" type="button" data-password-target="rg-pw2" aria-label="Show password">Show</button></div></div>
+        <label class="check" for="rg-student"><input id="rg-student" type="checkbox"><span>I am a student and want to request the student price. Staff verification is required.</span></label>
+        <button class="btn primary" type="submit">Create account</button>
+        <p class="formmsg" id="rg-msg" role="alert"></p>
+      </form>
+      <p class="alt">Already registered? <a href="#login">Log in</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band light view" id="view-account" hidden>
+  <div class="in" id="account-body"></div>
+</section>
+
+<section class="band light view" id="view-staff" hidden>
+  <div class="in" id="staff-body"></div>
+</section>
+
+<footer>
+  <div class="in">
+    <div class="cols">
+      <div><h3>Visit</h3><p>University of Saint La Salle, near Gate 2<br>Bacolod City</p></div>
+      <div><h3>Hours</h3><p>Mon to Fri, 7:00 AM to 8:00 PM<br>Sat, 8:00 AM to 6:00 PM</p></div>
+      <div><h3>Contact</h3><p><a href="mailto:s2300417@usls.edu.ph">s2300417@usls.edu.ph</a></p></div>
+    </div>
+    <p class="disc">Hugpong Kape is a student concept made for a class project. It is not a real business and is not an official project of the University of St. La Salle. All prices, figures and farmer profiles are examples.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

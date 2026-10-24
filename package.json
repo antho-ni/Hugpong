@@ -1,0 +1,19 @@
+{
+  "name": "hugpong-kape",
+  "version": "1.0.0",
+  "description": "Hugpong Kape: a student coffee shop concept with customer and staff logins.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  }
+}
