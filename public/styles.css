@@ -423,6 +423,77 @@ footer .disc { margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(2
   .bean-route { bottom: 66px; height: 150px; }
   .facts li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
 }
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .in {
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+  .band { padding-block: 44px; }
+  .bar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    padding-block: 16px;
+  }
+  .bar nav {
+    flex-wrap: nowrap;
+    gap: 18px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    white-space: nowrap;
+  }
+  .bar nav::-webkit-scrollbar { display: none; }
+  .bar .auth { flex-wrap: nowrap; }
+  .hero-grid {
+    gap: 32px;
+    padding-block: 18px 82px;
+  }
+  .hero h1 { font-size: clamp(38px, 12vw, 54px); }
+  .hero .sub { font-size: 17px; }
+  .hero .cta {
+    align-items: stretch;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  .hero .cta .btn { text-align: center; width: 100%; }
+  .receipt {
+    max-width: none;
+    padding: 18px 18px 16px;
+    font-size: 13px;
+  }
+  .receipt .zig { margin: 12px -18px -16px; }
+  .menuwrap { gap: 24px; margin-top: 28px; }
+  .drink { padding: 14px; }
+  .drink .nm { font-size: 17px; }
+  .split { padding: 18px; }
+  .split h3 { font-size: 20px; }
+  .legend div { grid-template-columns: 12px minmax(0, 1fr) auto; gap: 8px; }
+  .legend .sw { width: 12px; height: 12px; }
+  .legend .v { font-size: 14px; }
+  .sponsor { font-size: 14px; }
+  .authcard, .stamp { padding: 20px; }
+  .kpis { gap: 20px; }
+  .menuedit .go { align-items: stretch; flex-direction: column; }
+  .menuedit .go .btn { width: 100%; }
+  footer { padding-block: 36px; }
+}
+@media (max-width: 420px) {
+  .in {
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .brand { font-size: 20px; }
+  .eyebrow { font-size: 11px; }
+  .hero h1 { font-size: 38px; }
+  .h2 { font-size: 30px; }
+  .receipt .row { gap: 8px; }
+  .receipt .row span { min-width: 0; }
+  .stamps { gap: 7px; }
+  .stamps button { font-size: 12px; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .stack i { transition: none; }
